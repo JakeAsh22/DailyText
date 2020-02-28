@@ -1,6 +1,6 @@
 # Buzzed Bob's Bar
 
-#### _JavaScript, React Buzzed Bob's Bar, Jake Ash, 2/14/2020_
+#### _React/C#, Daily Pictures, Jake Ash, 2/14/2020_
 
 ## Description
 Create a stateful react application that can display the beers on the menu, and another page for the user to add more beers to the menu once the keg has been tapped.
@@ -8,6 +8,27 @@ Create a stateful react application that can display the beers on the menu, and 
 ## Diagram
 
 ![Diagram](src/assets/images/Diagram.jpg)
+
+
+## MVP
+- Send picture of cat to user 
+- Webpage that displays random picture of a cat when viewed
+- User can enter a phone number to website 
+- Error page if user visits a page that does not exist
+
+## Later Features
+- Host on a live server
+- Allow user to text number and get a picture
+- Send picture every morning at 8:00 AM
+- Allow user to change what time they get a text
+- Add a Dog api
+- Add motivational texts 
+- Google authentication login
+- Facebook authentication login
+- Discord authentication login
+- Implement Material UI 
+- Allow user to get different texts
+- Schedule what days they get different content
 
 
 ## Application should have:

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Cats from './components/cats';
 
+
+const API_KEY = process.env.API_KEY;
 class App extends Component {
 
   state = {
@@ -8,7 +10,12 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('https://api.thecatapi.com/v1/images/search')
+    fetch('https://api.thecatapi.com/v1/images/search?x-api-key', {
+      method: 'GET',
+      headers: {
+        'x-api-key': { API_KEY }
+      }
+    })
       .then(res => res.json())
       .then((data) => {
         this.setState({ contacts: data })

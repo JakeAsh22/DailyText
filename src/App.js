@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import Contacts from './components/contacts';
+import Cats from './components/cats';
 
 class App extends Component {
 
   state = {
-    contacts: []
+    cats: []
   }
 
   componentDidMount() {
-    fetch('http://jsonplaceholder.typicode.com/users')
+    fetch('https://api.thecatapi.com/v1/images/search')
       .then(res => res.json())
       .then((data) => {
         this.setState({ contacts: data })
@@ -17,7 +17,7 @@ class App extends Component {
   }
   render() {
     return (
-      <Contacts contacts={this.state.contacts} />
+      <Cats cats={this.state.cats} />
     );
   }
 }

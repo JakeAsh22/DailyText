@@ -35,7 +35,9 @@ class App extends Component {
       fontFamily: 'Roboto'
     }
     return (
+      
       <div style = {background}>
+      <h1>Add buttons</h1>
         <Cats cats={this.state.cats} />
       </div>
     )

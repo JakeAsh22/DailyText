@@ -1,15 +1,17 @@
-import React, { Component } from 'react';
-import Cats from './components/cats';
+import React, { Component } from 'react'
+import Cats from './cats'
 
 
-const API_KEY = process.env.API_KEY;
+const API_KEY = process.env.API_KEY
 class App extends Component {
 
-  state = {
-    cats: []
+  constructor(props) {
+    super(props)
+    this.state = {cats: []}
+    
   }
-
   componentDidMount() {
+    
     fetch('https://api.thecatapi.com/v1/images/search?x-api-key', {
       method: 'GET',
       headers: {
@@ -25,8 +27,8 @@ class App extends Component {
   render() {
     return (
       <Cats cats={this.state.cats} />
-    );
+    )
   }
 }
 
-export default App;
+export default App

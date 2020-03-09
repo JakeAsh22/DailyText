@@ -28,8 +28,11 @@ class App extends Component {
   }
   render() {
     const background = {
-      color: '#00552A',
-      fontFamily: 'Helvetica'
+      color: '#292929',
+      background: "linear-gradient(to top, #2980b9, #6dd5fa, #ffffff)",
+      height: '100vh',
+      minHeight: '100vh',
+      fontFamily: 'Roboto'
     }
     return (
       <div style = {background}>

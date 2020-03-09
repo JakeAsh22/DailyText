@@ -4,7 +4,7 @@ import Cats from './cats'
 
 const API_KEY = process.env.API_KEY
 class App extends Component {
-
+  
   constructor(props) {
     super(props)
     this.state = {cats: []}
@@ -20,7 +20,7 @@ class App extends Component {
     })
       .then(res => res.json())
       .then((data) => {
-        this.setState({ contacts: data })
+        this.setState({ cats: data })
       })
       .catch(console.log)
   }

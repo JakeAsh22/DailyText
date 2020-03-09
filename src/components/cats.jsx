@@ -4,15 +4,12 @@ const Cats = ({ cats }) => {
   return (
     <div>
       <center><h1>Cat List</h1></center>
+      <h2></h2>
       {cats.map((cat) => (
-                
-        <div class="card">
-          <h1>hi</h1>
-          <div class="card-body">
+        <div>
+            <h1>hi</h1>
             <h1>Hi there</h1>
-            <img src={cat.url} />
-                        
-          </div>
+            <img src={cat.url} />       
         </div>
       ))}
     </div>

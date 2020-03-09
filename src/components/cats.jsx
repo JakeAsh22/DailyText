@@ -1,5 +1,4 @@
 import React from 'react'
-
 const Cats = ({ cats }) => {
   return (
     <div>
@@ -9,7 +8,7 @@ const Cats = ({ cats }) => {
         <div key={cat.id}>
           <h1>hi</h1>
           <h1>Hi there</h1>
-          <img src={cat.url} />       
+         <center><img src={cat.url} height="800" width = "800"/></center>        
         </div>
       ))}
     </div>

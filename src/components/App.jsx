@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 import Cats from './cats'
 
 
+
 const API_KEY = process.env.API_KEY
+
 class App extends Component {
   
   constructor(props) {
@@ -25,8 +27,14 @@ class App extends Component {
       .catch(console.log)
   }
   render() {
+    const background = {
+      color: '#00552A',
+      fontFamily: 'Helvetica'
+    }
     return (
-      <Cats cats={this.state.cats} />
+      <div style = {background}>
+        <Cats cats={this.state.cats} />
+      </div>
     )
   }
 }

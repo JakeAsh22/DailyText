@@ -32,6 +32,10 @@ module.exports = {
 
   module: {
     rules: [
+        {
+            test: /\.css$/i,
+            use: ['css-loader'],
+          },
       {
          test: /\.jsx?$/,
          enforce: "pre",
@@ -76,7 +80,7 @@ module.exports = {
      new HtmlWebpackPlugin({
        template:'template.ejs',
        appMountId: 'react-app-root',
-       title: 'Buzzed Bobs Bar',
+       title: 'Daily Text',
        filename: resolve(__dirname, "build", "index.html"),
      }),
   ]

@@ -1,31 +1,15 @@
 import React, { Component } from 'react'
 import Cats from './cats'
-
-
+import CatCall from './catCall'
+import { Link } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
+import Header from './Header'
+import { runInContext } from 'vm';
 
 const API_KEY = process.env.API_KEY
 
 class App extends Component {
   
-  constructor(props) {
-    super(props)
-    this.state = {cats: []}
-    
-  }
-  componentDidMount() {
-    
-    fetch('https://api.thecatapi.com/v1/images/search?x-api-key', {
-      method: 'GET',
-      headers: {
-        'x-api-key': { API_KEY }
-      }
-    })
-      .then(res => res.json())
-      .then((data) => {
-        this.setState({ cats: data })
-      })
-      .catch(console.log)
-  }
   render() {
     const background = {
       color: '#292929',
@@ -37,8 +21,9 @@ class App extends Component {
     return (
       
       <div style = {background}>
-      <h1>Add buttons</h1>
-        <Cats cats={this.state.cats} />
+      <CatCall />
+      <h2>please</h2>
+
       </div>
     )
   }

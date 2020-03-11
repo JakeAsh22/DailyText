@@ -12,23 +12,9 @@ class catCall extends Component {
     this.state = {cats: []}
     
   }
-//   componentDidMount() {
-    
-//     fetch('https://api.thecatapi.com/v1/images/search?x-api-key', {
-//       method: 'GET',
-//       headers: {
-//         'x-api-key': { API_KEY }
-//       }
-//     })
-//       .then(res => res.json())
-//       .then((data) => {
-//         this.setState({ cats: data })
-//       })
-//       .catch(console.log)
-//   }
   getCat()  {
     
-    fetch('https://api.thecatapi.com/v1/images/search?x-api-key', {
+    fetch('https://api.thecatapi.com/v1/images/search', {
       method: 'GET',
       headers: {
         'x-api-key': { API_KEY }
@@ -41,18 +27,12 @@ class catCall extends Component {
       .catch(console.log)
   }
   render() {
-    const background = {
-      color: '#292929',
-      background: "linear-gradient(to top, #2980b9, #6dd5fa, #ffffff)",
-      height: '100vh',
-      minHeight: '100vh',
-      fontFamily: 'Roboto'
-    }
+
     return (
       
-      <div style = {background}>
-      <h1>Add buttons</h1>
-      <button onClick={() => this.getCat()}>please clap</button>
+      <div>
+        <h1>Add buttons</h1>
+        <button onClick={() => this.getCat()}>New Cat</button>
         <Cats cats={this.state.cats} />
       </div>
     )

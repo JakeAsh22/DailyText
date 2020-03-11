@@ -10,7 +10,7 @@ const Cats = ({ cats }) => {
         <div key={cat.id}>
           <h1>hi</h1>
           <h1>Hi there</h1>
-         <center><img src={cat.url} height="800" width = "800"/></center>        
+          <center><img src={cat.url} height="800" width = "800"/></center>        
         </div>
       ))}
     </div>

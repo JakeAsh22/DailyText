@@ -3,7 +3,7 @@ import CatCall from './catCall'
 import GroupMe from './GroupMe'
 
 class App extends Component {
-  
+
   render() {
     const background = {
       color: '#292929',
@@ -13,10 +13,11 @@ class App extends Component {
       fontFamily: 'Roboto'
     }
     return (
-      
-      <div style = {background}>
-        <CatCall />
+
+      <div style={background}>
         <GroupMe />
+        <CatCall />
+
       </div>
     )
   }

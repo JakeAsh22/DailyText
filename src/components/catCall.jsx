@@ -6,14 +6,14 @@ import PropTypes from 'prop-types'
 const API_KEY = process.env.API_KEY
 
 class catCall extends Component {
-  
+
   constructor(props) {
     super(props)
-    this.state = {cats: []}
-    
+    this.state = { cats: [] }
+
   }
-  getCat()  {
-    
+  getCat() {
+
     fetch('https://api.thecatapi.com/v1/images/search', {
       method: 'GET',
       headers: {
@@ -29,9 +29,8 @@ class catCall extends Component {
   render() {
 
     return (
-      
+
       <div>
-        <h1>Add buttons</h1>
         <button onClick={() => this.getCat()}>New Cat</button>
         <Cats cats={this.state.cats} />
       </div>

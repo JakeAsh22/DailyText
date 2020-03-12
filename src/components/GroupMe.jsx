@@ -48,7 +48,6 @@ class GroupMe extends Component {
           </label>
           <input type="submit" value="Submit" />
         </form>
-        <h1>Add buttons</h1>
         <button onClick={() => this.postMsg()}>Send Message</button>
       </div>
     )

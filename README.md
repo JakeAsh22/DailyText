@@ -1,4 +1,4 @@
-# Cat Pictures
+# Daily Text
 
 #### _React/JS, Cat Pictures, Jake Ash, 2/14/2020_
 
@@ -33,8 +33,8 @@ According to Rick Hanson, a Senior Fellow of the Greater Good Science Center at 
 
 ## Application should have:
 
-- Linking between pages
-- Ability to add new Tapped Kegs to the menu
+- Call a random cat picture on the API
+- A button to send a message to the groupMe group
 
 ## Setup/Installation Requirements
 
